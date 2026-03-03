@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flood Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #11998e, #38ef7d);
+            text-align: center;
+            padding-top: 100px;
+            color: white;
+        }
+
+        .card {
+            background: white;
+            color: black;
+            width: 400px;
+            margin: auto;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            color: green;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #11998e;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background-color: #0b776d;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <h1>✅ Low Flood Risk</h1>
+        <h2>Predicted Probability: {{ percent }}%</h2>
+
+        <a href="/predict">🔄 Try Again</a>
+    </div>
+
+</body>
+</html>

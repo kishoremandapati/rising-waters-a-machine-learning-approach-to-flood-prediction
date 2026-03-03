@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flood Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            color: white;
+            text-align: center;
+            padding-top: 40px;
+        }
+
+        .container {
+            background: white;
+            color: black;
+            width: 400px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+        }
+
+        input {
+            width: 90%;
+            padding: 8px;
+            margin: 8px 0;
+            border-radius: 5px;
+            border: 1px solid gray;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #1e3c72;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #16325c;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>🌊 Flood Prediction System</h2>
+
+        <form method="POST">
+            <input type="number" step="any" name="annual" placeholder="Annual Rainfall" required>
+
+            <input type="number" step="any" name="jan_feb" placeholder="Jan-Feb Rainfall" required>
+
+            <input type="number" step="any" name="mar_may" placeholder="Mar-May Rainfall" required>
+
+            <input type="number" step="any" name="jun_sep" placeholder="Jun-Sep Rainfall" required>
+
+            <input type="number" step="any" name="oct_dec" placeholder="Oct-Dec Rainfall" required>
+
+            <br><br>
+            <button type="submit">Predict Flood Risk</button>
+        </form>
+    </div>
+
+</body>
+</html>
